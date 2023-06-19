@@ -1,0 +1,92 @@
+{
+  "AHRIMAN": {
+    "KEYWORDS": "Infantry, Character, Epic Hero, Psyker, Chaos, Tzeentch, Ahriman",
+    "RANGED WEAPONS": {
+      "Inferno bolt pistol [PISTOL]": {
+        "RANGE": "12\"",
+        "A": 1,
+        "BS": "2+",
+        "S": 4,
+        "AP": -1,
+        "D": 1
+      },
+      "Psychic Stalk [PRECISION, PSYCHIC]": {
+        "RANGE": "18\"",
+        "A": 1,
+        "BS": "2+",
+        "S": 6,
+        "AP": -1,
+        "D": "D6"
+      }
+    },
+    "MELEE WEAPONS": {
+      "Black Staff of Ahriman [PSYCHIC]": {
+        "RANGE": "Melee",
+        "A": 5,
+        "WS": "2+",
+        "S": 7,
+        "AP": -1,
+        "D": 3
+      }
+    },
+    "FACTION KEYWORDS": "Thousand Sons",
+    "ABILITIES": {
+      "CORE": "Leader",
+      "FACTION": "Cabal of Sorcerers 3",
+      "Rubric Lord": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Wound roll.",
+      "Arch-Sorcerer of Tzeentch (Psychic)": "Once per battle, you can select this model to use a Ritual for 0 Cabal points (see Cabal of Sorcerers). If you do, all the other rules for using Rituals still apply."
+    },
+    "INVULNERABLE SAVE": "4+",
+    "M": "6\"",
+    "T": 4,
+    "SV": "3+",
+    "W": 5,
+    "LD": "6+",
+    "OC": 1
+  },
+  "AHRIMAN ON DISC OF TZEENTCH": {
+    "KEYWORDS": "Infantry, Character, Epic Hero, Psyker, Fly, Chaos, Tzeentch, Ahriman on Disc of Tzeentch",
+    "RANGED WEAPONS": {
+      "Inferno bolt pistol [PISTOL]": {
+        "RANGE": "12\"",
+        "A": 1,
+        "BS": "2+",
+        "S": 4,
+        "AP": -1,
+        "D": 1
+      },
+      "Psychic Stalk [PRECISION, PSYCHIC]": {
+        "RANGE": "18\"",
+        "A": 1,
+        "BS": "2+",
+        "S": 6,
+        "AP": -1,
+        "D": "D6"
+      }
+    },
+    "MELEE WEAPONS": {
+      "Black Staff of Ahriman [PSYCHIC]": {
+        "RANGE": "Melee",
+        "A": 5,
+        "WS": "2+",
+        "S": 7,
+        "AP": -1,
+        "D": 3
+      }
+    },
+    "FACTION KEYWORDS": "Thousand Sons",
+    "ABILITIES": {
+      "CORE": "Leader",
+      "FACTION": "Cabal of Sorcerers 3",
+      "Rubric Lord": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Wound roll.",
+      "Arch-Sorcerer of Tzeentch (Psychic)": "Once per battle, you can select this model to use a Ritual for 0 Cabal points (see Cabal of Sorcerers). If you do, all the other rules for using Rituals still apply."
+    },
+    "INVULNERABLE SAVE": "4+",
+    "M": "10\"",
+    "T": 4,
+    "SV": "3+",
+    "W": 6,
+    "LD": "6+",
+    "OC": 1
+  }
+}
