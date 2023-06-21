@@ -1,13 +1,133 @@
+/* Google Font - Replace 'Open Sans' with your preferred font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* Global Styles */
 body {
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Example styles for elements */
+h1 {
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Remove default styling */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  border: solid 1px #007bff;
+}
+
+/* Styling the select container */
+.select-container {
+  position: relative;
+  display: inline-block;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  padding: 8px;
+  min-width: 200px;
+}
+
+/* Styling the arrow icon */
+.select-container::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+
+/* Styling the dropdown options */
+.select-container select option {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Styling the selected option */
+.select-container select option:checked {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Styling the dropdown menu */
+.select-container select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #007bff;
+}
+
+/* Styling the dropdown menu when opened */
+.select-container select:valid {
+  border: 1px solid #007bff;
+}
+
+/* Styling the dropdown menu when closed */
+.select-container select:invalid {
+  border: 1px solid #dc3545;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 5px 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
 }

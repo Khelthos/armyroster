@@ -335,7 +335,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Hallowed Martyrs",
@@ -592,7 +592,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Shield Host",
@@ -932,7 +932,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Rad-Cohort",
@@ -1579,7 +1579,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Battle Host",
@@ -2430,7 +2430,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Combined Regiment",
@@ -2595,7 +2595,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Righteous Crusaders",
@@ -2801,7 +2801,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Sons of Sanguinius",
@@ -3363,7 +3363,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Daemonic Incursion",
@@ -3472,7 +3472,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Traitoris Lance",
@@ -3976,7 +3976,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Slaves to Darkness",
@@ -4178,7 +4178,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Unforgiven Task Force",
@@ -4513,7 +4513,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Plague Company",
@@ -4659,7 +4659,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Black Spear Task Force",
@@ -4930,7 +4930,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Realspace Raiders",
@@ -5175,7 +5175,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Ascension Day",
@@ -5470,7 +5470,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Teleport Strike Force",
@@ -5588,7 +5588,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Noble Lance",
@@ -5732,7 +5732,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Oathband",
@@ -6269,7 +6269,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Awakened Dynasty",
@@ -6877,7 +6877,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Waaagh! Tribe",
@@ -8127,7 +8127,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Gladius Task Force",
@@ -8958,7 +8958,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Kauyon",
@@ -9249,7 +9249,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Cult of Magic",
@@ -9752,7 +9752,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Invasion Fleet",
@@ -9998,7 +9998,7 @@
         ]
       },
       {
-        "unit": "DETACHMENT ENHANCEMENTS",
+        "enhancements": "DETACHMENT ENHANCEMENTS",
         "profiles": [
           {
             "profile": "Berzerker Warband",

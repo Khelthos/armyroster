@@ -1,28 +1,38 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import GridItem from "./GridItem";
+
 import data from "../data/jsonData.json";
 
 const Frontpage = () => {
-  const [pointsData, setPointsData] = useState([]);
+  // const [pointsData, setPointsData] = useState([]);
   const [selectedMainObject, setSelectedMainObject] = useState(null);
   const [subItems, setSubItems] = useState([]);
+  const [clickedItems, setClickedItems] = useState([]);
   const [totalPoints, setTotalPoints] = useState(0);
 
+  const handleClick = (unit, index) => {
+    console.log("Oggetto clickato: ", unit);
+    setClickedItems((prevItems) => [...prevItems, unit]);
+  };
+
   const handleMainObjectSelect = (mainObject) => {
-    setSelectedMainObject(mainObject);
-    setSubItems([]);
+    const obj = data.find((i) => i.faction === mainObject);
+    setSelectedMainObject(obj);
+    console.log("Selezionato:", obj.faction);
+    setSubItems(obj.units);
     setTotalPoints(0);
   };
 
-  const handleSubItemAdd = (subItem) => {
-    setSubItems([...subItems, subItem]);
-    setTotalPoints(totalPoints + subItem.points);
-  };
+  // const handleSubItemAdd = (subItem) => {
+  //   setSubItems([...subItems, subItem]);
+  //   setTotalPoints(totalPoints + subItem.points);
+  // };
 
-  const handleSubItemRemove = (subItem) => {
-    const newSubItems = subItems.filter((item) => item !== subItem);
-    setSubItems(newSubItems);
-    setTotalPoints(totalPoints - subItem.points);
-  };
+  // const handleSubItemRemove = (subItem) => {
+  //   const newSubItems = subItems.filter((item) => item !== subItem);
+  //   setSubItems(newSubItems);
+  //   setTotalPoints(totalPoints - subItem.points);
+  // };
 
   console.log("data lenght: ", data.length);
 
@@ -30,31 +40,46 @@ const Frontpage = () => {
     <div>
       <h1>Frontpage</h1>
       <p>Select a main object to add sub items:</p>
-      <ul>
+      <select
+        className="select-container"
+        onChange={(ev) => handleMainObjectSelect(ev.target.value)}
+      >
         {data.map((mainObject) => (
-          <li
+          <option
             key={mainObject.faction}
-            onClick={() => handleMainObjectSelect(mainObject)}
+            value={mainObject.faction}
+            className="option1"
           >
             {mainObject.faction}
-          </li>
+          </option>
         ))}
-      </ul>
+      </select>
       {selectedMainObject && (
         <>
           <h2>{selectedMainObject.faction}</h2>
           <p>Add sub items:</p>
-          <ul>
-            {selectedMainObject.units.map((subItem) => (
-              <li key={subItem.unit}>
-                {subItem.unit} {subItem.profiles} ({subItem.points} points)
-                <button onClick={() => handleSubItemRemove(subItem)}>
-                  Remove
-                </button>
-              </li>
+          <div className="grid-container">
+            {subItems.map((subItem, index) => (
+              // <div key={subItem.unit} className="">
+              //   <label>{subItem.unit}</label>
+              //   {subItem.unit && (
+              //     <select>
+              //       {subItem.profiles.map((prof, ind) => (
+              //         <option key={ind} value={prof.profile}>
+              //           {prof.profile}
+              //         </option>
+              //       ))}
+              //     </select>
+              //   )}
+              // </div>
+              <GridItem
+                key={index}
+                unit={subItem.unit}
+                onClick={() => handleClick(subItem, index)}
+              />
             ))}
-          </ul>
-          <form
+          </div>
+          {/* <form
             onSubmit={(event) => {
               event.preventDefault();
               const newSubItem = {
@@ -75,7 +100,25 @@ const Frontpage = () => {
               <input type="number" name="subItemPoints" />
             </label>
             <button type="submit">Add</button>
-          </form>
+          </form> */}
+          <div>
+            <h2>Clicked Items:</h2>
+            <ul>
+              {clickedItems.map((item, index) => (
+                <li key={index}>
+                  {item.unit}{" "}
+                  <select>
+                    {item.unit &&
+                      item.profiles.map((prof, ind) => (
+                        <option key={ind} value={prof.profile}>
+                          {prof.profile}
+                        </option>
+                      ))}
+                  </select>
+                </li>
+              ))}
+            </ul>
+          </div>
           <p>Total points needed: {totalPoints}</p>
         </>
       )}
